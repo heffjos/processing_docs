@@ -8,16 +8,23 @@
   
   
   
-  <link rel="shortcut icon" href="/img/favicon.ico">
-  <title>Processing Pipeline</title>
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Raw Data Storage - Processing Pipeline</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
 
-  <link rel="stylesheet" href="/css/theme.css" />
-  <link rel="stylesheet" href="/css/theme_extra.css" />
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
   
-  <script src="/js/jquery-2.1.1.min.js" defer></script>
-  <script src="/js/modernizr-2.8.3.min.js" defer></script>
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Raw Data Storage";
+    var mkdocs_page_input_path = "raw_data_storage.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script> 
   
@@ -31,25 +38,29 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href="/." class="icon icon-home"> Processing Pipeline</a>
+        <a href=".." class="icon icon-home"> Processing Pipeline</a>
         
       </div>
 
       <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="/.">Home</a>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="/overview/">Overview</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../overview/">Overview</a>
                     </li>
                 </ul>
                 <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="/scripts_temp/">Scripts</a>
+                    <li class="toctree-l1"><a class="reference internal" href="../scripts_temp/">Scripts</a>
                     </li>
                 </ul>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="/raw_data_storage/">Raw Data Storage</a>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Raw Data Storage</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#directory-structure-overview">Directory structure overview</a>
+    </li>
+    </ul>
                     </li>
                 </ul>
       </div>
@@ -61,7 +72,7 @@
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="/.">Processing Pipeline</a>
+        <a href="..">Processing Pipeline</a>
       </nav>
 
       
@@ -69,9 +80,11 @@
         <div class="rst-content">
           <div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="/.">Docs</a> &raquo;</li>
+    <li><a href="..">Docs</a> &raquo;</li>
     
+      
     
+    <li>Raw Data Storage</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -82,15 +95,27 @@
           <div role="main">
             <div class="section">
               
-
-  <h1 id="404-page-not-found">404</h1>
-
-  <p><strong>Page not found</strong></p>
-
-
+                <h1 id="raw-data-storage-model">Raw data storage model<a class="headerlink" href="#raw-data-storage-model" title="Permanent link">&para;</a></h1>
+<p>We need a lab standard for storing raw dicom and nifti files, because it unifies lab imaging analysis procedures. Finding raw files and working with raw data across studies will be easier. Lab standards just make sense.</p>
+<h2 id="directory-structure-overview">Directory structure overview<a class="headerlink" href="#directory-structure-overview" title="Permanent link">&para;</a></h2>
+<p>sychopy
+└── psychopy-env.yml
+singularity_images
+├── fmriprep-v1.4.1_dir-mcw.simg
+├── fmriprep-v1.4.1.img
+├── fmriprep-v1.5.2_dir-mcw.simg
+├── fmriprep-v1.5.2.img</p>
+              
             </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="../scripts_temp/" class="btn btn-neutral" title="Scripts"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
@@ -114,11 +139,13 @@
     <span class="rst-current-version" data-toggle="rst-current-version">
       
       
+        <span><a href="../scripts_temp/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
       
     </span>
 </div>
-    <script>var base_url = '/';</script>
-    <script src="/js/theme.js" defer></script>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
     <script defer>
         window.onload = function () {
             SphinxRtdTheme.Navigation.enable(true);
